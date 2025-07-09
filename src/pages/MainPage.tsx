@@ -1,4 +1,4 @@
-import Logo from "../components/layout/Logo";
+import Logo from "../components/SharedComponents/Logo";
 
 export default function Main(){
     return(

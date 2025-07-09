@@ -1,6 +1,6 @@
 export default function About(){
     return(
-        <div className="p-8">
+        <section id="about" className="py-16">
             <h1 className="absolute left-[-40px] text-10xl font-bold"> 
                 About 
             </h1>
@@ -20,6 +20,6 @@ export default function About(){
                     quick and clear project estimation.
                 </p>
             </div>
-        </div>
+        </section>
     );
 }

@@ -1,5 +1,4 @@
 import Cursor from "../SharedComponents/Cursor";
-import Logo from "../SharedComponents/Logo";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -12,7 +11,6 @@ export default function HeroBody(){
 
     return(
         <div className="cursor-none">
-            <Logo />
             <div className="absolute inset-0 z-10 flex flex-col justify-center text-white px-4">
                 <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="text-4xl sm:text-8xl md:text-8xl lg:text-9xl font-extrabold self-start ml-4 sm:ml-8 md:ml-1 xl:ml-44 2xl:ml-96">
                     Take it to

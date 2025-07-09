@@ -1,5 +1,7 @@
+import Logo from "../components/layout/Logo";
+
 export default function Main(){
     return(
-        <h1>Hola</h1>
+        <Logo />
     );
 }

@@ -17,7 +17,7 @@ export default function HeroGradient() {
       }
     };
     document.body.appendChild(script);
-  }, []);
+  }, []); 
 
   return (
     <div className="absolute h-screen w-screen">

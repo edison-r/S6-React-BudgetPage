@@ -26,10 +26,10 @@ export default function Cursor({ cursorVariant }: CursorProps){
 
     const variants = {
         default: {
-            x: mousePosition.x - 45,
-            y: mousePosition.y - 45,
-            height: 50,
-            width: 50,
+            x: mousePosition.x - 0,
+            y: mousePosition.y - 0,
+            height: 0,
+            width: 0,
         },
         text: {
             x: mousePosition.x - 45,

@@ -1,9 +1,11 @@
-import Logo from "../components/SharedComponents/Logo";
+import Navbar from "../components/ServicesComponents/Navbar";
+import Cursor from "../components/SharedComponents/Cursor";
 
 export default function Main(){
     return(
-        <>
-            <Logo />
-        </>
+        <main className="max-w-[1200px] mx-auto">  
+            <Cursor cursorVariant="default" />
+            <Navbar />
+        </main>
     );
 }

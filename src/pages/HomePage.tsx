@@ -1,5 +1,5 @@
-import HeroGradient from "../components/HomePageComponents/HeroGradient";
-import HeroBody from "../components/HomePageComponents/HeroBody";
+import HeroGradient from "../components/HomeComponents/HeroGradient";
+import HeroBody from "../components/HomeComponents/HeroBody";
 
 export default function Home(){
     return(

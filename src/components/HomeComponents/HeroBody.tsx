@@ -27,7 +27,7 @@ export default function HeroBody(){
             </div>
             <Cursor cursorVariant={cursorVariant} />
             <div className="absolute text-9xl font-light bottom-8 right-4 z-10 text-white cursor-pointer hover:translate-x-4 transition-transform duration-300">
-                <Link to="/main">{">>>>>>>>>>>>>>>>>>>>>>>>>"}</Link>
+                <Link to="/services">{">>>>>>>>>>>>>>>>>>>>>>>>>"}</Link>
             </div>
         </>
     );

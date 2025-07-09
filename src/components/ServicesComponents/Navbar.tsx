@@ -8,16 +8,16 @@ export default function Navbar() {
         <div></div>
       <nav>
         <ul className="flex gap-10">
-          <li className="text-white font-light hover:text-red-500 transition-colors">
+          <li className="font-light hover:text-red-500 transition-colors">
             <Link to="/">Home</Link>
           </li>
-          <li className="text-white font-light hover:text-red-500 transition-colors">
+          <li className="font-light hover:text-red-500 transition-colors">
             <Link to="/#about">About</Link>
           </li>
-          <li className="text-white font-light hover:text-red-500 transition-colors">
+          <li className="font-light hover:text-red-500 transition-colors">
             <Link to="/#services">Services</Link>
           </li>
-          <li className="text-white font-light hover:text-red-500 transition-colors">
+          <li className="font-light hover:text-red-500 transition-colors">
             <Link to="/#budgets">Ongoing budgets</Link>
           </li>
         </ul>

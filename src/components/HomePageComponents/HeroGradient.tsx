@@ -28,7 +28,7 @@ export default function HeroGradient() {
         data-multy="2"
         data-hue="180"
         data-brightness="0.8"
-        data-mouse="-2"
+        data-mouse="-1"
         data-scale="1"
         data-noise="1.5"
         data-time="0.2"

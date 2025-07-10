@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import Services from "../components/ServicesComponents/Services";
-import About from "../components/ServicesComponents/About";
-import Navbar from "../components/ServicesComponents/Navbar";
-import Cursor from "../components/SharedComponents/Cursor";
+import Services from "../components/Sections/Services";
+import About from "../components/Sections/About";
+import Navbar from "../components/SharedComponents/layout/Navbar";
+import Cursor from "../components/SharedComponents/layout/Cursor";
 
 export default function ServicesPage(){
     const location = useLocation();

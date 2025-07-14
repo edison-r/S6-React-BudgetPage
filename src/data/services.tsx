@@ -2,6 +2,19 @@ import type { ServiceCardData } from "../types/types";
 
 export const services: ServiceCardData[] = [
     {
+        type: "ads",
+        title: "ADS",
+        tagline: "Stop scrolling. Start clicking.",
+        description: "Smart ads. No bullshit.",
+        features: [
+            "Quick visibility with measurable results",
+            "Target exactly who you want",
+            "Optimize in real time",
+            "Scales with your budget"
+        ],
+        price: 200,
+    },
+    {
         type: "seo",
         title: "SEO",
         tagline: "Be seen. Or be invisible.",
@@ -15,19 +28,6 @@ export const services: ServiceCardData[] = [
         price: 300,
     },
     {
-        type: "ads",
-        title: "ADS",
-        tagline: "Stop scrolling. Start clicking.",
-        description: "Smart ads. No bullshit.",
-        features: [
-            "Quick visibility with measurable results",
-            "Target exactly who you want",
-            "Optimize in real time",
-            "Scales with your budget"
-        ],
-        price: 400,
-    },
-    {
         type: "web",
         title: "WEB",
         tagline: "Websites that actually work.",
@@ -38,6 +38,6 @@ export const services: ServiceCardData[] = [
             "Built with modern, scalable tech",
             "Tailored to your brand - no templates"
         ],
-        price: 500,
+        price: 600,
     },
 ];

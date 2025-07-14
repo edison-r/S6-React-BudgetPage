@@ -37,12 +37,16 @@ export default function Calculator(){
 
     const calculateTotal = () => {
         let total = 0;
-        if(selectedServices.seo) total += 300;
-        if(selectedServices.ads) total += 200;
-        if(selectedServices.web.selected) {
-            total += 500;
-            total += selectedServices.web.languages * 30;
-            total += selectedServices.web.translations * 30;
+        const ads = services.find((s) => s.type === "ads");
+        const seo = services.find((s) => s.type === "seo");
+        const web = services.find((s) => s.type === "web");
+
+        if(selectedServices.ads && ads) total += ads.price;
+        if(selectedServices.seo && seo) total += seo.price;
+        if(selectedServices.web.selected && web) {
+            total += web.price;
+            total += selectedServices.web.languages * 50;
+            total += selectedServices.web.translations * 50;
         }
         return total;
     }
@@ -65,7 +69,7 @@ export default function Calculator(){
                 />
             ))}
         </div>
-        <div className="text-white text-5xl font-bold mt-8">Total: {calculateTotal()} €</div>
+        <div className="flex justify-end text-4xl font-bold -mt-32">Total: {calculateTotal()} €</div>
     </div>
   );
 };

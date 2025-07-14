@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { services } from "../../data/services";
 import ServicesCard from "../Cards/ServiceCard";
 
@@ -10,12 +9,12 @@ export default function Services(){
                 Services 
             </h1>
             <div className="flex flex-row gap-5">
-                <ServicesCard />
-                <ServicesCard />
-                <ServicesCard />
-            </div>   
+                {services.map((service, i) => (
+                    <ServicesCard key={i} {...service} />
+                ))}
+            </div>
             <div>
-                <h2>Budgeted price: 620€</h2>
+                <h2 className="flex flex-col content-end text-4xl font-bold">Budgeted price: 620€</h2>
             </div>       
         </section>
     );

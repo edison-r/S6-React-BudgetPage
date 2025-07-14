@@ -1,9 +1,10 @@
+export type ServiceType = "seo" | "ads" | "web";
+
 export type ServiceCardData = {
-    id: string;
+    type: ServiceType;
     title: string;
     tagline: string;
     description: string;
     features: string[];
     price: number;
-    isSelected?: boolean;
 };

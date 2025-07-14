@@ -2,7 +2,7 @@ import type { ServiceCardData } from "../types/types";
 
 export const services: ServiceCardData[] = [
     {
-        id: "seo",
+        type: "seo",
         title: "SEO",
         tagline: "Be seen. Or be invisible.",
         description: "We make Google love your site.",
@@ -15,7 +15,7 @@ export const services: ServiceCardData[] = [
         price: 300,
     },
     {
-        id: "ads",
+        type: "ads",
         title: "ADS",
         tagline: "Stop scrolling. Start clicking.",
         description: "Smart ads. No bullshit.",
@@ -28,7 +28,7 @@ export const services: ServiceCardData[] = [
         price: 400,
     },
     {
-        id: "web",
+        type: "web",
         title: "WEB",
         tagline: "Websites that actually work.",
         description: "Fast. Responsive. Brutal.",

@@ -1,4 +1,4 @@
-import Cursor from "../SharedComponents/Cursor";
+import Cursor from "../SharedComponents/layout/Cursor";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 

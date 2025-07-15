@@ -15,7 +15,7 @@ export default function Counter({ label, value, onChange }: CounterProps) {
 
     return (
         <div className="flex flex-col items-center gap-2">
-            <label className="text-sm font-mono">{label}</label>
+            <label className="text-lg font-[DotGothic16]">{label}</label>
             <div className="flex items-center gap-2">
                 <button
                 onClick={decrease}
@@ -23,7 +23,7 @@ export default function Counter({ label, value, onChange }: CounterProps) {
                 >
                 &lt;
                 </button>
-                <span className="text-lg font-extrabold w-4 text-center">{value}</span>
+                <span className="text-lg font-[DotGothic16] w-4 text-center">{value}</span>
                 <button
                 onClick={increase}
                 className="w-6 h-6 flex items-center justify-center rounded-full border border-white/30 hover:bg-white/10 hover:text-red-500 transition"

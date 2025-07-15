@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import Quotation from "../components/Sections/Quotation";
 import Services from "../components/Sections/Services";
 import About from "../components/Sections/About";
 import Navbar from "../components/SharedComponents/layout/Navbar";
@@ -23,6 +24,7 @@ export default function ServicesPage(){
             <Navbar />
             <About />
             <Services />
+            <Quotation />
         </main>
     );
 }

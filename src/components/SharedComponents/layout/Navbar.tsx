@@ -7,7 +7,7 @@ export default function Navbar() {
        <Link to="/"><Logo /></Link> 
         <div></div>
       <nav>
-        <ul className="flex gap-10">
+        <ul className="flex gap-10 text-xl">
           <li className="font-light hover:text-red-500 transition-colors">
             <Link to="/services#about">About</Link>
           </li>

@@ -69,7 +69,7 @@ export default function Calculator(){
                 />
             ))}
         </div>
-        <div className="flex justify-end text-4xl font-bold -mt-32">Total: {calculateTotal()} €</div>
+        <div className="flex justify-end text-4xl font-bold -mt-32">Budgeted price: {calculateTotal()} €</div>
     </div>
   );
 };

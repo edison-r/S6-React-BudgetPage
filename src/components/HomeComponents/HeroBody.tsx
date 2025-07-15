@@ -25,7 +25,7 @@ export default function HeroBody(){
             </div>
             <Cursor cursorVariant={cursorVariant} />
             <div onMouseEnter={textEnter} onMouseLeave={textLeave} className="absolute text-9xl font-light bottom-8 right-4 z-10 text-white cursor-pointer hover:translate-x-4 transition-transform duration-300">
-                <Link to="/services" className="cursor-none">{">>>>>>>>>>>>>>>>>>>>>>>>>"}</Link>
+                <Link to="/services" className="cursor-none">{">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"}</Link>
             </div>
         </div>
     );

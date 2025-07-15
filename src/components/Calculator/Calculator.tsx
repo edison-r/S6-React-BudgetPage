@@ -1,18 +1,8 @@
-import { useState } from "react";
 import ServiceCard from "../Cards/ServiceCard";
+import type { CalculatorProps } from "../../types/types";
 import { services } from "../../data/services";
 
-
-export default function Calculator(){
-    const [selectedServices, setSelectedServices] = useState({
-        seo: false,
-        ads: false,
-        web: {
-            selected: false,
-            languages: 0,
-            translations: 0,
-        },
-    });
+export default function Calculator({ selectedServices, setSelectedServices, total }: CalculatorProps ){
 
     const handleToggle = (type : string) => {
         if(type === "web"){
@@ -35,22 +25,6 @@ export default function Calculator(){
         }));
     };
 
-    const calculateTotal = () => {
-        let total = 0;
-        const ads = services.find((s) => s.type === "ads");
-        const seo = services.find((s) => s.type === "seo");
-        const web = services.find((s) => s.type === "web");
-
-        if(selectedServices.ads && ads) total += ads.price;
-        if(selectedServices.seo && seo) total += seo.price;
-        if(selectedServices.web.selected && web) {
-            total += web.price;
-            total += selectedServices.web.languages * 50;
-            total += selectedServices.web.translations * 50;
-        }
-        return total;
-    }
-
     return (
     <div>
         <div className="flex flex-row gap-5">
@@ -69,7 +43,7 @@ export default function Calculator(){
                 />
             ))}
         </div>
-        <div className="flex justify-end text-4xl font-bold -mt-32">Budgeted price: {calculateTotal()} €</div>
+        <div className="flex justify-end text-4xl font-bold -mt-32">Budgeted price: {total} €</div>
     </div>
   );
 };

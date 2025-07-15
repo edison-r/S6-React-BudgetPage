@@ -24,7 +24,6 @@ export default function ServicesPage(){
             <Navbar />
             <About />
             <Services />
-            <Quotation />
         </main>
     );
 }

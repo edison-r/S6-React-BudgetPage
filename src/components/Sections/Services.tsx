@@ -45,7 +45,7 @@ export default function Services() {
                 />
             </section>
 
-            <section id="quotation" className="relative min-h-screen flex flex-col">
+            <section id="quotation" className="relative pb-16 flex flex-col">
                 <h1 className="absolute right-[-255px] z-0 text-8xl font-bold">Request quotation</h1>
                 <div className="mt-[60px]">
                     <QuotationForm 

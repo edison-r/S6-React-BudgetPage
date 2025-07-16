@@ -1,69 +1,90 @@
-# React + TypeScript + Vite
+# 🧱 Sprint 6 – Brutalist Budget Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a budget calculator for freelancers/web development agencies.
+Ir allows you to select diferent services and automatically calculate the total price, as qell as generate a quote based on the client's data.
 
-Currently, two official plugins are available:
+Thisthe first truly **React** website using **TypeScript**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+### Service Section
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Cards are rendered with the available services.
+- Each service has a title, description, features, and price.
+- Selecting the card with the checkbox adds it to the total budget.
+- The Web card includes two additional options:
+  - Number of pages (languages)
+  - Number of languages (translations)
+- Each additional option adds €50 per unit to the price.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Calculation Logic
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Prices are defined in a central array (`services.ts`) and are used dynamically in calculations.
+- The `calculateTotal` function totals the selected services and the additional Web options.
+- The result is updated in real time.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Customer Form
+
+- The user can enter their name, phone number, and email address.
+- Upon submitting the form, the generated quote is saved along with their details.
+- Everything is stored in the state of the `Services` component.
+
+### State Structure
+
+- `selectedServices` controls which services and additional options are selected.
+- `budgets` stores all quotes submitted by users.
+
+### Featured Components
+
+- `ServiceCard`: Displays each service card with styles and animations.
+- `Calculator`: Controls the selection logic and renders the cards.
+- `RequestServiceCard`: Connected user form with state.
+- `Services`: Orchestrates the entire flow: state, logic, and rendering.
+
+### Animations and UI
+
+- `FramerMotion` is used for smooth animations on cards and forms.
+- Background with `backdrop-blur`, inner shadows, and responsive design with Tailwind.
+
+## Project Structure
+
+```
+📁 src
+├── components/                 ← Reusable and functional UI components
+│   ├── Calculator/             ← Budget calculator logic and UI
+│   ├── Cards/                  ← Visual cards for services and forms
+│   ├── HomeComponents/         ← Main home page sections (Hero, Body, etc.)
+│   ├── Sections/               ← Optional layout wrappers for scalable page structure
+│   └── SharedComponents/       ← Common components used across different sections (e.g., Logo, Navbar)
+├── data/                       ← Static content such as services, features, FAQs...
+├── pages/                      ← Individual pages of the app (Home, Services, etc.)
+├── routes/                     ← React Router configuration and route management
+├── types/                      ← TypeScript interfaces and types for props and state
+├── styles/                     ← Global CSS styles and custom variables
+├── App.tsx                     ← Root component that defines overall app structure and routes
+└── main.tsx                    ← Vite + React entry file for rendering the app
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Next Steps
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Refactor using `useContext` to centralize service state.
+- Add annual payment option with a 20% discount (`useReducer`).
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## My Dev Journal
+
+[in progress]
+
+## Technologies Used
+
+- React + TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Router
+- Component-based architecture (atomic/organisms)
+- Typed with interfaces (types.ts)
+
+[![My Skills](https://skillicons.dev/icons?i=vite,html,css,tailwind,ts,react,figma,vscode,git,github)](https://skillicons.dev)
+
+## Project Status
+![Static Badge](https://img.shields.io/badge/Status-In_Progress-orange?style=flat)

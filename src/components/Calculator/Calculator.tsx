@@ -1,6 +1,8 @@
 import ServiceCard from "../Cards/ServiceCard";
 import type { CalculatorProps } from "../../types/types";
 import { services } from "../../data/services";
+import { AnimatePresence, motion } from "framer-motion";
+
 
 export default function Calculator({ selectedServices, setSelectedServices, total }: CalculatorProps ){
 
@@ -43,7 +45,20 @@ export default function Calculator({ selectedServices, setSelectedServices, tota
                 />
             ))}
         </div>
-        <div className="flex justify-end text-4xl font-bold -mt-32">Budgeted price: {total} €</div>
+        <div className="flex justify-end text-4xl font-bold -mt-32">
+        Budgeted price: &nbsp;
+        <AnimatePresence mode="wait" initial={false}>
+            <motion.span
+                key={total}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                transition={{ duration: 0.2 }}
+            >
+            {total} €
+            </motion.span> 
+        </AnimatePresence>
+        </div>
     </div>
   );
 };

@@ -17,7 +17,13 @@ export default function ServiceCard({ title, tagline, description, features, pri
     return(
         <>
             <div className="z-50 flex flex-col gap-5 my-[168px]">
-                <div className="flex flex-col justify-between w-[388px] h-[487px] rounded-2xl p-6 backdrop-blur-md bg-white/5 border border-white/10 shadow-[inset_0_0_5px_rgba(255,255,255,0.1),_0_0_10px_rgba(255,255,255,0.2)]">
+                <motion.div className="flex flex-col justify-between w-[388px] h-[487px] rounded-2xl p-6 backdrop-blur-md bg-white/5 border border-white/10 shadow-[inset_0_0_5px_rgba(255,255,255,0.1),_0_0_10px_rgba(255,255,255,0.2)]"
+                    whileHover={{
+                        scale: 1.01,
+                        backdropFilter: "blur(30px)",
+                        transition: { duration: 0.5 },
+                    }}
+                    >
                     <div>
                         <h1 className="text-white text-7xl font-bold">{title}</h1>
                         <p className="text-white text-2xl font-bold mt-2">{tagline}</p>
@@ -39,10 +45,10 @@ export default function ServiceCard({ title, tagline, description, features, pri
                             />
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 <AnimatePresence>
-                    {type === "web" && webOptions && onOptionsChange && selected && (
+                    {type === "web" && selected && webOptions && onOptionsChange && (
                         <motion.div
                             key="web-options"
                             className="flex justify-center gap-8 font-bold"
@@ -52,14 +58,14 @@ export default function ServiceCard({ title, tagline, description, features, pri
                             transition={{ duration: 0.4 }} 
                         >
                             <Counter 
-                                label="qty of languages"
+                                label="programming languages"
                                 value={webOptions.translations}
                                 onChange={(newVal) =>
                                     onOptionsChange({ ...webOptions, translations: newVal})
                                 }
                             />
-                        <Counter 
-                                label="qty of pages"
+                            <Counter 
+                                label="number of pages"
                                 value={webOptions.languages}
                                 onChange={(newVal) =>
                                     onOptionsChange({ ...webOptions, languages: newVal})

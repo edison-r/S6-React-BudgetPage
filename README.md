@@ -4,6 +4,8 @@ This project is a budget calculator for freelancers/web development agencies.
 Ir allows you to select diferent services and automatically calculate the total price, as qell as generate a quote based on the client's data.
 
 Thisthe first truly **React** website using **TypeScript**.
+## Preview
+[in progress]
 
 ## Features
 
@@ -45,6 +47,25 @@ Thisthe first truly **React** website using **TypeScript**.
 
 - `FramerMotion` is used for smooth animations on cards and forms.
 - Background with `backdrop-blur`, inner shadows, and responsive design with Tailwind.
+
+
+## Getting Started
+
+#### Clone this repository
+
+```bash
+git@github.com:edison-r/S6-React-BudgetPage.git
+```
+
+#### Install Dependencies
+```bash
+npm install
+```
+
+#### Start Development Server
+```bash
+npm run server
+```
 
 ## Project Structure
 

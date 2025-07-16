@@ -46,7 +46,7 @@ export default function Services() {
             </section>
 
             <section id="quotation" className="relative pb-16 flex flex-col">
-                <h1 className="absolute right-[-255px] z-0 text-8xl font-bold">Request quotation</h1>
+                <h2 className="absolute right-[-255px] z-0 text-8xl font-bold">Request quotation</h2>
                 <div className="mt-[60px]">
                     <QuotationForm 
                         onSubmitBudget={(data) => {
@@ -56,8 +56,8 @@ export default function Services() {
                                 total,
                             };
                             setBudgets([...budgets, newBudget]);
-                            console.log("✅ Nuevo presupuesto generado:", newBudget);
-                            console.log("📋 Lista completa de presupuestos:", [...budgets, newBudget]);
+                            console.log("Nuevo presupuesto generado:", newBudget);
+                            console.log("Lista completa de presupuestos:", [...budgets, newBudget]);
                         }}
                     />
                 </div>

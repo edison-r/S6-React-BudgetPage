@@ -7,7 +7,6 @@ type RequestServiceCardProps = {
 };
 
 export default function QuotationForm({ onSubmitBudget }: RequestServiceCardProps){
-
     const [formData, setFormData ] = useState<BudgetFormData>({
         name: "",
         phone: "",

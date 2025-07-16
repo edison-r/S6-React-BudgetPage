@@ -1,8 +1,4 @@
-type CounterProps = {
-    label: string;
-    value: number;
-    onChange: (value: number) => void;
-};
+import type { CounterProps } from "../../types/types";
 
 export default function Counter({ label, value, onChange }: CounterProps) {
     const decrease = () => {
@@ -21,14 +17,14 @@ export default function Counter({ label, value, onChange }: CounterProps) {
                 onClick={decrease}
                 className="w-6 h-6 flex items-center justify-center rounded-full border border-white/30 hover:bg-white/10 hover:text-red-500 transition"
                 >
-                &lt;
+                -
                 </button>
                 <span className="text-lg font-[DotGothic16] w-4 text-center">{value}</span>
                 <button
                 onClick={increase}
                 className="w-6 h-6 flex items-center justify-center rounded-full border border-white/30 hover:bg-white/10 hover:text-red-500 transition"
                 >
-                &gt;
+                +
                 </button>
             </div>
         </div>

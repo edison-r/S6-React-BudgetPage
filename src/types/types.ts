@@ -26,7 +26,13 @@ export type CalculatorProps = {
 };
 
 export type BudgetFormData = {
-  name: string;
-  phone: string;
-  email: string;
+    name: string;
+    phone: string;
+    email: string;
+};
+
+export type CounterProps = {
+    label: string;
+    value: number;
+    onChange: (value: number) => void;
 };

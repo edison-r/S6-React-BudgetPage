@@ -15,7 +15,7 @@ export type SelectedServices = {
     web: {
         selected: boolean;
         languages: number;
-        translations: number;
+        pages: number;
     };
 };
 
@@ -36,3 +36,8 @@ export type CounterProps = {
     value: number;
     onChange: (value: number) => void;
 };
+
+export type QuotationProps = {
+    budgets: BudgetFormData[];
+    //setBudgets: React.Dispatch<React.SetStateAction<BudgetFormData>>;
+}

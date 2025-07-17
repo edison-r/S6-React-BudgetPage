@@ -8,9 +8,9 @@ type Props = ServiceCardData & {
     onToggle: () => void;
     webOptions?: {
         languages: number;
-        translations: number;
+        pages: number;
     };
-    onOptionsChange?: (options: { languages: number; translations: number }) => void;
+    onOptionsChange?: (options: { languages: number; pages: number }) => void;
 };
 
 export default function ServiceCard({ title, tagline, description, features, price, selected, type, onToggle, webOptions, onOptionsChange }: Props){
@@ -58,14 +58,14 @@ export default function ServiceCard({ title, tagline, description, features, pri
                             transition={{ duration: 0.4 }} 
                         >
                             <Counter 
-                                label="programming languages"
-                                value={webOptions.translations}
+                                label="number of pages "
+                                value={webOptions.pages}
                                 onChange={(newVal) =>
-                                    onOptionsChange({ ...webOptions, translations: newVal})
+                                    onOptionsChange({ ...webOptions, pages: newVal})
                                 }
                             />
                             <Counter 
-                                label="number of pages"
+                                label="programming languages"
                                 value={webOptions.languages}
                                 onChange={(newVal) =>
                                     onOptionsChange({ ...webOptions, languages: newVal})

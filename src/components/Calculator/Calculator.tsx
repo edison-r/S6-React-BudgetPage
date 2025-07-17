@@ -20,7 +20,7 @@ export default function Calculator({ selectedServices, setSelectedServices, tota
         }
     };
 
-    const handleWebOptionChange = (options: { languages: number; translations: number }) => {
+    const handleWebOptionChange = (options: { languages: number; pages: number }) => {
         setSelectedServices((prev) => ({
             ...prev,
             web: { ...prev.web, ...options },

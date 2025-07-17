@@ -1,8 +1,9 @@
 import { useState } from "react";
-import QuotationForm from "../Cards/QuotationForm";
-import Calculator from "../../components/Calculator/Calculator";
 import { services } from "../../data/services";
 import type { SelectedServices, BudgetFormData } from "../../types/types";
+import QuotationForm from "../Cards/QuotationForm";
+import Calculator from "../../components/Calculator/Calculator";
+import Quotation from "./Quotation";
 
 export default function Services() {
     const [budgets, setBudgets] = useState<BudgetFormData[]>([]);
@@ -13,7 +14,7 @@ export default function Services() {
         web: {
             selected: false,
             languages: 0,
-            translations: 0,
+            pages: 0,
         },
     });
 
@@ -28,7 +29,7 @@ export default function Services() {
         if(selectedServices.web.selected && web) {
             total += web.price;
             total += selectedServices.web.languages * 50;
-            total += selectedServices.web.translations * 50;
+            total += selectedServices.web.pages * 50;
         }
         return total;
     }
@@ -62,6 +63,7 @@ export default function Services() {
                     />
                 </div>
             </section>
+            <Quotation budgets={budgets} />
         </>
     );
 }

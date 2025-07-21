@@ -57,8 +57,6 @@ export default function Services() {
                                 total,
                             };
                             setBudgets([...budgets, newBudget]);
-                            console.log("Nuevo presupuesto generado:", newBudget);
-                            console.log("Lista completa de presupuestos:", [...budgets, newBudget]);
                         }}
                     />
                 </div>

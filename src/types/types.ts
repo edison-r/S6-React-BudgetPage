@@ -41,3 +41,9 @@ export type QuotationProps = {
     budgets: BudgetFormData[];
     //setBudgets: React.Dispatch<React.SetStateAction<BudgetFormData>>;
 }
+
+export type ModalCardProps = {
+    modal: boolean;
+    setModal: React.Dispatch<React.SetStateAction<boolean>>;
+    label: string;
+};

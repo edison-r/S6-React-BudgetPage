@@ -39,7 +39,6 @@ export type CounterProps = {
 
 export type QuotationProps = {
     budgets: BudgetFormData[];
-    //setBudgets: React.Dispatch<React.SetStateAction<BudgetFormData>>;
 }
 
 export type ModalCardProps = {
@@ -47,3 +46,9 @@ export type ModalCardProps = {
     setModal: React.Dispatch<React.SetStateAction<boolean>>;
     label: string;
 };
+
+export type BudgetSortControlsProps = {
+    onSortByName: () => void;
+    onSortByTotal: () => void;
+    onReset: () => void;
+}

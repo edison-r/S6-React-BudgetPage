@@ -28,7 +28,7 @@ export default function QuotationForm({ onSubmitBudget }: RequestServiceCardProp
             <div className="z-10">
                 <div className="flex flex-col justify-center font-[DotGothic16] w-full h-[300px] font-['Fragment_Mono'] rounded-2xl p-6 backdrop-blur-sm bg-white/5 border border-white/10 shadow-[inset_0_0_5px_rgba(255,255,255,0.1),_0_0_10px_rgba(255,255,255,0.2)]">
                     <form onSubmit={handleSubmit} className="w-full z-50">
-                        <div className="flex items-center text-white text-3xl gap-5 py-2">
+                        <div className="flex items-center text-white text-2xl gap-5 py-2">
                             <input 
                                 name="name"
                                 value={formData.name}

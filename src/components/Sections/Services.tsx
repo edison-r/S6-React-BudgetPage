@@ -3,7 +3,7 @@ import { services } from "../../data/services";
 import type { SelectedServices, BudgetFormData } from "../../types/types";
 import QuotationForm from "../Cards/QuotationForm";
 import Calculator from "../../components/Calculator/Calculator";
-import Quotation from "./Quotation";
+import QuotationList from "./QuotationList";
 
 export default function Services() {
     const [budgets, setBudgets] = useState<BudgetFormData[]>([]);
@@ -13,8 +13,8 @@ export default function Services() {
         ads: false,
         web: {
             selected: false,
-            languages: 0,
-            pages: 0,
+            languages: 2,
+            pages: 1,
         },
     });
 
@@ -61,7 +61,7 @@ export default function Services() {
                     />
                 </div>
             </section>
-            <Quotation budgets={budgets} />
+            <QuotationList budgets={budgets} />
         </>
     );
 }

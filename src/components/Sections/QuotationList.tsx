@@ -43,13 +43,13 @@ export default function QuotationList({ budgets }: QuotationProps){
             />
             </svg>
             <h2 className="absolute left-1/3 -translate-x-1/2 top-[455px] z-0 text-8xl font-bold">Ongoing budgets</h2>
-            <div className="flex flex-row items-center justify-center gap-6 my-8">
+            <div className="flex flex-row font-[DotGothic16] items-center justify-center gap-6 my-8">
                 <input
                     type="text"
                     placeholder="Search by name..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="absolute top-[150px] px-4 py-2 w-[300px] bg-white/10 text-white  placeholder-white/50 border border-white/20 rounded-md backdrop-blur-sm focus:outline-none"
+                    className="absolute top-[150px] px-4 py-1 w-[300px] bg-transparent text-white  placeholder-white/50 border-b border-white focus:outline-none hover:border-red-500"
                 />
                 <BudgetSortControls 
                     onSortByName={handleSortByName}
@@ -57,7 +57,7 @@ export default function QuotationList({ budgets }: QuotationProps){
                     onReset={handleReset}
                 />
             </div>
-            <div className="py-32">
+            <div className="py-16">
                 {filteredBudgets.map((budget, index) => (
                     <div key={index} className="flex flex-col justify-center w-full h-[300px] mb-8 rounded-2xl p-12 backdrop-blur-sm bg-white/5 border border-white/10 shadow-[inset_0_0_5px_rgba(255,255,255,0.1),_0_0_10px_rgba(255,255,255,0.2)]">
                         <BudgetCard budget={budget} />

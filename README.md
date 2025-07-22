@@ -7,6 +7,17 @@ Thisthe first truly **React** website using **TypeScript**.
 ## Preview (youtube video) 
 [![Demo Video](https://github.com/edison-r/S6-React-BudgetPage/blob/main/demo_archives/Demo-image.png)](https://youtu.be/vTAmXKH65SQ)
 
+## Technologies Used
+
+[![My Skills](https://skillicons.dev/icons?i=vite,html,css,tailwind,ts,react,figma,vscode,git,github)](https://skillicons.dev)
+
+- React + TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Router
+- Component-based architecture (atomic/organisms)
+- Typed with interfaces (types.ts)
+
 ## Features
 
 ### Service Section
@@ -95,17 +106,6 @@ npm run server
 - Add unit tests.
 - Add a transition animation from home to services.
 - Implement an export to .pdf functionallity.
-
-## Technologies Used
-
-- React + TypeScript
-- Tailwind CSS
-- Framer Motion
-- React Router
-- Component-based architecture (atomic/organisms)
-- Typed with interfaces (types.ts)
-
-[![My Skills](https://skillicons.dev/icons?i=vite,html,css,tailwind,ts,react,figma,vscode,git,github)](https://skillicons.dev)
 
 ## My Dev Journal
 

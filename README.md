@@ -4,8 +4,8 @@ This project is a budget calculator for freelancers/web development agencies.
 Ir allows you to select diferent services and automatically calculate the total price, as qell as generate a quote based on the client's data.
 
 Thisthe first truly **React** website using **TypeScript**.
-## Preview
-[in progress]
+## Preview (youtube video) 
+[![Demo Video](https://github.com/edison-r/S6-React-BudgetPage/blob/main/demo_archives/Demo-image.png)](https://youtu.be/vTAmXKH65SQ)
 
 ## Features
 
@@ -87,14 +87,14 @@ npm run server
 
 ```
 
-## Next Steps
+## Next Steps / To-do
 
 - Refactor using `useContext` to centralize service state.
-- Add annual payment option with a 20% discount (`useReducer`).
-
-## My Dev Journal
-
-[in progress]
+- Add annual payment option with a 20% discount.
+- Implement the share by URL.
+- Add unit tests.
+- Add a transition animation from home to services.
+- Implement an export to .pdf functionallity.
 
 ## Technologies Used
 
@@ -107,5 +107,17 @@ npm run server
 
 [![My Skills](https://skillicons.dev/icons?i=vite,html,css,tailwind,ts,react,figma,vscode,git,github)](https://skillicons.dev)
 
+## My Dev Journal
+
+This has probably been the project where I’ve learned the most so far, not just in terms of code, but also in how to organize it and think ahead.
+
+At first, I had everything pretty much packed into one place: the logic, the UI, the calculator, all working together but a bit chaotic. It worked, but I could already feel it would be hard to scale or maintain. Eventually, I started breaking it down into smaller, more focused components, moving the logic up where needed and making the data flow clearer. Just that change made a huge difference in how I understood the app as a whole.
+
+One of the parts I enjoyed the most was working on the budgets list — especially adding filters, sort buttons, and search. They’re small features, but they really make the app feel more polished and usable.
+
+Another thing I played with was animation. I added a little fade-in effect when the total price updates, and it made the UI feel more alive. I’m also starting to use Tailwind more fluently, and now I can build components quickly and keep everything consistent visually.
+
+What I take away from this sprint is that writing code is one thing, but building an actual product, even a small one, is a whole different challenge. There were lots of times I didn’t fully understand what I was doing, but going step by step, refactoring, and asking questions helped me move forward. I'm proud of the result, but even more of the process. 🚀🍾
+
 ## Project Status
-![Static Badge](https://img.shields.io/badge/Status-In_Progress-orange?style=flat)
+![Static Badge](https://img.shields.io/badge/Status-Completed-green?style=flat)

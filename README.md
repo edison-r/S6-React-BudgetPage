@@ -3,9 +3,23 @@
 This project is a budget calculator for freelancers/web development agencies.
 Ir allows you to select diferent services and automatically calculate the total price, as qell as generate a quote based on the client's data.
 
-Thisthe first truly **React** website using **TypeScript**.
+This is the first truly **React** website using **TypeScript**.
+
+[Take a look!](https://s6-react-budget-page.vercel.app/)
+
 ## Preview (youtube video) 
 [![Demo Video](https://github.com/edison-r/S6-React-BudgetPage/blob/main/demo_archives/Demo-image.png)](https://youtu.be/vTAmXKH65SQ)
+
+## Technologies Used
+
+[![My Skills](https://skillicons.dev/icons?i=vite,html,css,tailwind,ts,react,figma,vscode,git,github)](https://skillicons.dev)
+
+- React + TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Router
+- Component-based architecture (atomic/organisms)
+- Typed with interfaces (types.ts)
 
 ## Features
 
@@ -95,17 +109,6 @@ npm run server
 - Add unit tests.
 - Add a transition animation from home to services.
 - Implement an export to .pdf functionallity.
-
-## Technologies Used
-
-- React + TypeScript
-- Tailwind CSS
-- Framer Motion
-- React Router
-- Component-based architecture (atomic/organisms)
-- Typed with interfaces (types.ts)
-
-[![My Skills](https://skillicons.dev/icons?i=vite,html,css,tailwind,ts,react,figma,vscode,git,github)](https://skillicons.dev)
 
 ## My Dev Journal
 

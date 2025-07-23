@@ -3,7 +3,10 @@
 This project is a budget calculator for freelancers/web development agencies.
 Ir allows you to select diferent services and automatically calculate the total price, as qell as generate a quote based on the client's data.
 
-Thisthe first truly **React** website using **TypeScript**.
+This is the first truly **React** website using **TypeScript**.
+
+[Take a look!](https://s6-react-budget-page.vercel.app/)
+
 ## Preview (youtube video) 
 [![Demo Video](https://github.com/edison-r/S6-React-BudgetPage/blob/main/demo_archives/Demo-image.png)](https://youtu.be/vTAmXKH65SQ)
 

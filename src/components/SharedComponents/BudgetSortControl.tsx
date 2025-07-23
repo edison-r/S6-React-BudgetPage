@@ -5,13 +5,13 @@ export default function BudgetSortControls({ onSortByName, onSortByTotal, onRese
     <div className="flex absolute top-[150px] left-[800px] gap-4 mb-8">
       <button
         onClick={onSortByName}
-        className="text-white border-b px-4 py-1 hover:border-red-500 transition-colors"
+        className="text-white border-b px-4 py-1 hover:border-red-500 focus:border-red-500 transition-colors"
       >
         Sort by Name
       </button>
       <button
         onClick={onSortByTotal}
-        className="text-white border-b px-4 py-1 hover:border-red-500 transition-colors"
+        className="text-white border-b px-4 py-1 hover:border-red-500 focus:border-red-500 transition-colors"
       >
         Sort by Total
       </button>
